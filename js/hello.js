@@ -64,6 +64,7 @@ console.log(sum);
 */
 
 // 演習 配列を使ったテストの点数の集計
+/*
 var scores = [100, 90, 80, 70, 60];
 var sum = 0;
 
@@ -72,4 +73,35 @@ for(var i = 0; i<sc_length; i++){
   sum+=scores[i];
 }
 
-console.log(sum/sc_length);
+console.log('合計値: ' + sum);
+console.log('平均値: ' + sum/sc_length);
+*/
+
+// function命令
+/*
+function getRectangle(height, width){
+  return height * width;
+}
+
+console.log(getRectangle(3, 5));
+*/
+
+// 関数リテラルによる関数の定義
+/*
+var getRectangle = function(height, width){
+  return height * width;
+}
+
+console.log(getRectangle(3,5));
+*/
+/*
+// 関数コンストラクター
+var getRectangle = new Function('height', 'width', 'return height * width');
+console.log(getRectangle(3, 5));
+*/
+
+// 演習 関数
+function price(unitPrice, n){
+  return unitPrice * n;
+}
+console.log(price(100, 13));
